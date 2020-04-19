@@ -1,4 +1,5 @@
 HW1 (individual) Network Analytics (MSc BA, 2020) Due on 28-02-2020 23:00
+
 Individual: Has to be done on your own without any consultation of people or sources except as specified below. The HW has 60 points total and no individual feedback will be given, but solutions with class-level feedback will be posted after grading.
 Start early as they may take some time to do.
 Theory: You develop a feeling for graphs and their manipulation and objects only by doing some theory. For the following give a proof --- i.e., rigorous inductive reasoning, and in your own words. Draw to develop intuition, but a picture is not a proof.
@@ -6,11 +7,15 @@ Theory: You develop a feeling for graphs and their manipulation and objects only
 2. (10 points) Show that every tree is a bipartite graph.
 3. (10 points) A directed acyclic graph (DAG) is a directed graph without cycles (the underlying graph may have cycles, so it is not a tree). Show that a DAG has a labeling of its nodes (that is a labeling 1, …, n of its nodes) such that every arc goes from a lower-numbered node to a higher-numbered node. (You need to find a way to do it, and also show that is always possible.)
 These DAGs are ubiquitous in neural networks (used for visual recognition), Hidden-Markov models (used for speech recognition) and in general, graphical models.
+
 NOTE: These is basic graph theory and you will find the answers in any graph theory book (although it would be faster to think through than search). Please take care of writing the answer in your own words in any case!
 NetworkX Exercise
+
 Programming: besides the documentation, you are allowed to search forums (but not consult or ask your cohort). The final code has to be written and debugged entirely on your own: Part of the learning objective is to search and choose for the best nx, pandas or numpy function.
+
 PLEASE SUBMIT ALL CODE AS Jupyter html files ONLY
 This is based on the data file called HW1_asset_prices.csv. This represents the price movements of a set of assets (bonds, stocks etc., their description is quite irrelevant here).
+
 Economists and investors are very interested in the correlation of asset prices, both to understand risk, as well as (hopefully) find correlation to lagged asset prices for investing. A correlation matrix with N assets is an N × N matrix of correlations. See https://en.wikipedia.org/wiki/Stock_correlation_network for some background information.
 Your task is to visualize the correlation matrix in network form. You are free to use any python package for your calculations in a (numpy, scipy, pandas etc.) as you see fit. For b and c, I expect you to use the matplotlib.pyplot interface in NetworkX. You can gain the +5 point if you (i) submit in Jupyter notebook format (ii) interface to any external drawing packages such as graphviz to call one of their drawing functions.
 Get a skeleton code working to do the tasks (can be done in under 10 lines of code with the right built-in functions in pandas and networkx) and then enhance and explore from there on.
@@ -21,6 +26,7 @@ c. (10 points) Enhance your plot by representing the thickness of the edges and 
 HW2
 Network Analytics, MSc BA, 2019_20
 Due by 13 March 2020, 11PM
+
 Programming: You are allowed to consult on the programming part with your colleagues and on the web but the final code has to be written and debugged entirely by your group.
 In the following, you have to search for the appropriate functions in NetworkX/numpy/scipy yourselves.
 1. (10 points) In a previous cohort I asked the students to write down the number of emails they exchanged with other members of the cohort. Data might be having some problems, but we proceed nevertheless. Use built-in functions in NetworkX on the data HW2_ who_talks_to_whom.xlsx to do an organizational network analysis report (1 page max)---essentially calculating centrality measures (try at least one eigenvalue based one) and clustering coefficients and gaining some insight into the network. The objective for me (your client) is to identify who are the leaders and opinion-makers in the cohort, and any other qualitative insights you might obtain.
@@ -58,6 +64,7 @@ values would give you a clue).
 HW3
 Network Analytics, MSc BA, 2019_20
 Submission by 25 March
+
 Programming: You are allowed to consult on the programming part with your colleagues and on the web but the final code has to be written and debugged entirely on your own. You have to search for the appropriate functions in NetworkX/numpy/scipy yourselves.
 1. The exercise is on detecting communities in two networks
 i. The small Zachary Karate Club network with known community ground-truth
